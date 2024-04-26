@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+.main {
+  display: flex;
+  /* width: 500px; */
+  height: 500px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  width: 400px;
+  align-items: center;
+  justify-content: center g;
+}
+.evenNumber,
+.oddNumber {
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+.result{
+    display: flex;
+    width: 400px;
+}
