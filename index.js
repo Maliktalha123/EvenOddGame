@@ -1,6 +1,9 @@
 let userInput = document.getElementById("userInput");
 let randomNumber = document.getElementById("randomNumber");
-let messageForClient =document.getElementById("messageForClient")
+
+let messageForClient = document.getElementById("messageForClient");
+let winMessage = "Congrats, You Win";
+let looseMessage = "Sorry You Loose, Try Again ...";
 
 function evenOrOdd(value) {
   userInput.innerText = value;
@@ -8,12 +11,20 @@ function evenOrOdd(value) {
   console.log(randomNum);
 
   if (randomNum == 1) {
-
     randomNumber.innerText = "Odd";
-messageForClient.innerText = "Congrats !, You Won" 
-} else {
+
+    if (userInput.innerText === randomNumber.innerText) {
+      messageForClient.innerText = winMessage;
+    } else {
+      messageForClient.innerText = looseMessage;
+    }
+  } else if (randomNum === 2) {
     randomNumber.innerText = "Even";
-    messageForClient.innerText= "Sorry You Lose,Try Again. "
+
+    if (userInput.innerText === randomNumber.innerText) {
+      messageForClient.innerText = winMessage;
+    } else {
+      messageForClient.innerText = looseMessage;
+    }
   }
 }
-

@@ -9,20 +9,19 @@
   <body>
     <div class="main">
       <div class="buttons">
-        <div onclick="evenOrOdd('2')" class="evenNumber">Even Number</div>
-        <div onclick="evenOrOdd('1')" class="oddNumber">Odd Number</div>
+        <div onclick="evenOrOdd('Odd')" class="oddNumber">Odd Number</div>
+        <div onclick="evenOrOdd('Even')" class="evenNumber">Even Number</div>
       </div>
       <div class="result">
         <div class="userInput">
-          <h2>USer Input</h2>
-          <div id="userInput"></div>
-          </div> 
+          <h2>Your Input</h2>
+          <h2 id="userInput">-</h2>
+        </div>
         <div class="randomNumber">
-          <h2>Even/Odd</h2>
-          <div id="randomNumber"></div>
+          <h2>The Value</h2>
+          <div id="randomNumber">-</div>
         </div>
       </div>
-      
     </div>
     <div class="messageForClient">
       <h1 id="messageForClient"></h1>
