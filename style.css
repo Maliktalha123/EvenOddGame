@@ -6,24 +6,39 @@
 }
 .main {
   display: flex;
-  /* width: 500px; */
   height: 500px;
 }
 .buttons {
   display: flex;
   gap: 10px;
-  width: 400px;
+  min-width: 400px;
   align-items: center;
-  justify-content: center g;
+  justify-content: center;
+  color: white;
 }
 .evenNumber,
 .oddNumber {
+  background-color: rgb(125, 66, 181);
   width: 150px;
   height: 150px;
   font-size: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.result{
-    display: flex;
-    width: 400px;
+.oddNumber:hover,
+.evenNumber:hover {
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+.result {
+  display: flex;
+  width: 400px;
+}
+.userInput,
+.userInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
