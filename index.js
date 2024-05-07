@@ -2,7 +2,7 @@ let userInput = document.getElementById("userInput");
 let randomNumber = document.getElementById("randomNumber");
 
 let messageForClient = document.getElementById("messageForClient");
-let winMessage = "Congrats, You Win";
+let winMessage = "Congrats, You Win"; 
 let looseMessage = "Sorry You Loose, Try Again ...";
 
 function evenOrOdd(value) {
